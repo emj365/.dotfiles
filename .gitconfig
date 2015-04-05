@@ -1,7 +1,7 @@
 [user]
     name = Michael JIN
     email = emj365@gmail.com
-    editor = subl -n -w
+    editor = vim
 [alias]
     # Add
     ad = add
@@ -80,5 +80,5 @@
     # the usual default is to push all branches
     default = tracking
 [core]
-    editor = subl -n -w
+    editor = vim
     excludesfile = ~/.gitignore_global
