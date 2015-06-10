@@ -18,7 +18,7 @@ ZSH_THEME="ys"
 #
 # Which plugins would you like to load?
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx ant git rails sublime git-flow npm node history-substring-search z zsh-syntax-highlighting)
+plugins=(osx ant git git-flow git-flow-avh git-hubflow rails sublime npm node history-substring-search z zsh-syntax-highlighting)
 
 # -- Oh My Zsh -----------------------------------------------------------------
 source $ZSH/oh-my-zsh.sh
