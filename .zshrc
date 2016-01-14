@@ -1,20 +1,20 @@
 # -- Zsh -----------------------------------------------------------------------
 # Path to your oh-my-zsh configuration.
-ZSH="/Users/michaeljin/.dotfiles/.oh-my-zsh"
+ZSH="/Users/michael/.dotfiles/.oh-my-zsh"
 
 # -- Editor --------------------------------------------------------------------
 EDITOR="subl -n -w"
 
 # -- Theme ---------------------------------------------------------------------
 # Set name of the theme to load.
-# Look in /Users/michaeljin/.dotfiles/.oh-my-zsh/themes/
+# Look in /Users/michael/.dotfiles/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="ys"
 
 # -- Plugins -------------------------------------------------------------------
-# Plugins can be found in /Users/michaeljin/.dotfiles/.oh-my-zsh/plugins/
-# Custom plugins may be added to /Users/michaeljin/.dotfiles/.oh-my-zsh/custom/plugins/
+# Plugins can be found in /Users/michael/.dotfiles/.oh-my-zsh/plugins/
+# Custom plugins may be added to /Users/michael/.dotfiles/.oh-my-zsh/custom/plugins/
 #
 # Which plugins would you like to load?
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -39,7 +39,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # -- Nvm -----------------------------------------------------------------------
-export NVM_DIR="/Users/michaeljin/.nvm"
+export NVM_DIR="/Users/michael/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # -- Term ----------------------------------------------------------------------
