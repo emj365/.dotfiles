@@ -53,10 +53,10 @@ ZSH_THEME="honukai"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  z vi-mode
+  z
   zsh-syntax-highlighting history-substring-search
   brew osx sublime tugboat
-  ssh-agent screen
+  screen
   docker docker-compose vagrant
   tig git hub github git-hubflow
   rvm ruby rake gem bundler rails
