@@ -141,4 +141,3 @@ bindkey '^N' history-substring-search-down
 # -- for gpg https://unix.stackexchange.com/a/257065/125903
 GPG_TTY=$(tty)
 export GPG_TTY
-
