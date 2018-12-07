@@ -9,6 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="ys"
 # https://github.com/oskarkrawczyk/honukai-iterm-zsh
+# wget -O .oh-my-zsh/themes/honukai.zsh-theme https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm-zsh/master/honukai.zsh-theme
 ZSH_THEME="honukai"
 
 # Uncomment the following line to use case-sensitive completion.
