@@ -2,6 +2,11 @@
     name = Michael JIN
     email = emj365@gmail.com
     editor = vim
+    signingKey = 1AFA143640F8E40F
+[gpg]
+    program = gpg2
+[commit]
+    gpgsign = true
 [alias]
     # Add
     ad = add
