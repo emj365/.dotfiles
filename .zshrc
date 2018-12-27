@@ -148,3 +148,4 @@ export GPG_TTY
 # -- golang -----------------------------------------------------------------------
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
+export GO111MODULE=on
