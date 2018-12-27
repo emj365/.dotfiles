@@ -55,18 +55,18 @@ ZSH_THEME="honukai"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  z #vi-mode
-  zsh-syntax-highlighting history-substring-search
-  brew osx sublime tugboat
-  ssh-agent gpg-agent screen
+  autojump thefuck
+  zsh-syntax-highlighting history-substring-search zsh-autosuggestions
+  brew osx sublime
+  gpg-agent screen
+  doctl
   docker docker-compose vagrant
   tig git hub github git-hubflow
   rvm ruby rake gem bundler rails
   nvm node npm bower yarn
+  golang
+  vscode
 )
-
-# https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/ssh-agent#instructions
-zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,9 +118,7 @@ if [ -d "$HOME/.nvm" ]
 then
   export NVM_DIR="$HOME/.nvm"
   # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-  . "/usr/local/opt/nvm/nvm.sh" # brew installed nvm
-  /usr/local/opt/nvm/etc/bash_completion.d/nvm
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # brew installed nvm
 fi
 
 # -- Android -----------------------------------------------------------------------
@@ -136,6 +134,7 @@ if [ -d "$HOME/.rvm/bin" ]
 then
   # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
   export PATH="$HOME/.rvm/bin:$PATH"
+  source "$HOME/.rvm/scripts/rvm"
 fi
 
 # -- set keys -----------------------------------------------------------------------
