@@ -1,9 +1,27 @@
-# ln -s $(pwd)/.gitconfig ~/
-# ln -s $(pwd)/.gitignore_global ~/
+[[ ! -e $HOME/.zshrc ]] && ln -s $(pwd)/.zshrc $HOME/
+[[ ! -e $HOME/.gitconfig ]] && ln -s $(pwd)/.gitconfig $HOME/
+[[ ! -e $HOME/.gitignore_global ]] && ln -s $(pwd)/.gitignore_global $HOME/
 
-mkdir -p ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes
-wget -O ${ZSH_CUSTOM:-~/.oh-my-zsh/customr}/themes/honukai.zsh-theme https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm-zsh/master/honukai.zsh-theme
+[[ ! -e $HOME/.vim/backups ]] && mkdir ~/.vim/backups
+[[ ! -e $HOME/.vim/swaps ]] && mkdir ~/.vim/swaps
+[[ ! -e $HOME/.vim/undo ]] && mkdir ~/.vim/undo
+[[ ! -e $HOME/.vim/colors ]] && mkdir ~/.vim/colors
+if [ ! -e $HOME/.vim/colors/solarized8.vim ]; then
+	wget -O $HOME/.vim/colors/solarized8.vim https://raw.githubusercontent.com/lifepillar/vim-solarized8/v1.1.1/colors/solarized8.vim
+fi
+[[ ! -e $HOME/.vimrc ]] && ln -s $(pwd)/.vimrc $HOME/
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+if [ ! -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes ]; then
+	mkdir -p ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes
+fi
+if [ ! -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/honukai.zsh-theme ]; then
+	wget -O ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/honukai.zsh-theme https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm-zsh/master/honukai.zsh-theme
+fi
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ ! -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ]; then
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
+
+if [ ! -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ]; then
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
