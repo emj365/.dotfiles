@@ -55,7 +55,7 @@ ZSH_THEME="honukai"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  autojump thefuck
+  autojump
   zsh-syntax-highlighting history-substring-search zsh-autosuggestions
   brew osx sublime
   gpg-agent screen
