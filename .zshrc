@@ -146,3 +146,18 @@ bindkey '^N' history-substring-search-down
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
 # export GO111MODULE=on
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  os_icon
+  ssh
+  context
+  dir
+  go_version
+  virtualenv
+  nvm
+  vcs
+)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
